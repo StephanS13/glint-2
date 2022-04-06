@@ -1,0 +1,41 @@
+.home {
+  padding: 140px 130px;
+}
+.home h6 {
+  color: rgb(189, 189, 189);
+  padding-bottom: 20px;
+}
+.home h1 {
+  color: white;
+}
+.buttons {
+  padding-top: 100px;
+  display: flex;
+}
+.buttons a {
+  color: white;
+  border: white 1px solid;
+  padding: 15px 35px;
+  margin-right: 17px;
+}
+.logos {
+  padding: 180px 45px;
+}
+.logos img {
+  width: 35px;
+  margin: 10px 0;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px)  {
+  .buttons {
+    display: block;
+    
+  }
+}
+@media (min-width: 768px)  {
+  .buttons {
+    display: flex;
+  }
+}
