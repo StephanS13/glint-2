@@ -1,0 +1,58 @@
+.page-2 {
+  background-color: #39b54a;
+}
+.home-2 {
+  padding: 140px 130px;
+  text-align: center;
+}
+.content-2 h5 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  font-size: 18px;
+  margin: 0;
+}
+.content-2 h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 80px;
+  padding-bottom: 65px;
+  border-bottom: rgb(209, 209, 209) 1px solid;
+}
+.content-2 p {
+  margin: 0 -100px;
+  margin-top: 50px;
+  font-size: 27px;
+  font-family: "lora-regular", serif;
+}
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 30px;
+  margin-top: 60px;
+}
+.vl {
+  border-right: 1px solid rgb(205, 205, 205);
+  height: 155px;
+  position: absolute;
+  left: 50%;
+}
+.vl-2 {
+  border-right: 1px solid rgb(205, 205, 205);
+  height: 155px;
+  position: absolute;
+  left: 50%;
+  margin-top: 186px;
+}
+.numbers h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 80px;
+  font-weight: 900;
+  padding-bottom: 12px;
+}
+.numbers h5 {
+  font-weight: 900;
+  text-transform: capitalize;
+}

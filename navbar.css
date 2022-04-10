@@ -1,13 +1,19 @@
 .navbar {
   padding: 40px 30px;
+  position:sticky;
+  top: 0;
 }
 .navbar img {
   width: 80px;
 }
 .menu {
-  color: rgb(15, 179, 108);
+  color: #39b54a;
   align-items: center;
   padding-right: 20px;
+  transition: 0.7s;
+}
+.menu:hover {
+  color: white;
 }
 .navbar-toggler {
   color: white;

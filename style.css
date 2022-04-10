@@ -1,12 +1,14 @@
 @import url("navbar.css");
 @import url("home-1.css");
+@import url("home-2.css");
+@import url("home-3.css");
 
 body {
   margin: 0;
-  font-family: "Varela", sans-serif;
+  font-family: "montserrat-medium", sans-serif;
 }
 h1, h3, h6, p {
-  font-family: "Varela", sans-serif;
+  font-family: "montserrat-medium", sans-serif;
   margin: 0;
 }
 h1 {
@@ -23,6 +25,4 @@ h6 {
 }
 p {
   font-size: 12px;
-  letter-spacing: 0.2rem;
-  font-weight: 700;
 }
