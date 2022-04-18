@@ -5,12 +5,16 @@
 }
 .navbar img {
   width: 80px;
+  transition: 0.7s;
+}
+.logo {
+  opacity: 0;
 }
 .menu {
   color: #39b54a;
   align-items: center;
   padding-right: 20px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .menu:hover {
   color: white;
@@ -19,3 +23,12 @@
   color: white;
   width: 20px;
 }
+.bg-black {
+  background-color: black;
+  transition: 0.5s background-color ease;
+  padding: 5px 20px;
+}
+/* .navbar-lewagon {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
+} */

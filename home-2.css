@@ -5,12 +5,16 @@
   padding: 140px 130px;
   text-align: center;
 }
+.content2-transition {
+  
+}
 .content-2 h5 {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.2rem;
   font-size: 18px;
   margin: 0;
+  
 }
 .content-2 h1 {
   color: white;
@@ -18,6 +22,7 @@
   font-size: 80px;
   padding-bottom: 65px;
   border-bottom: rgb(209, 209, 209) 1px solid;
+  transition: ease-in-out 2s;
 }
 .content-2 p {
   margin: 0 -100px;
