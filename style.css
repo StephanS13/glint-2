@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: "montserrat-medium", sans-serif;
+  overflow-x: hidden;
 }
 h1, h3, h6, p {
   font-family: "montserrat-medium", sans-serif;
@@ -25,4 +26,33 @@ h6 {
 }
 p {
   font-size: 12px;
+}
+
+/* EFFECT */
+.appear {
+  transform: translateY(130px);
+  opacity: 0;
+}
+.appear.active{
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1.5s;
+}
+
+
+/* CONTAINER */
+@media (max-width: 800px) {
+  .container {
+    max-width: 620px;
+  }
+}
+@media (max-width: 690px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    max-width: 400px;
+  }
 }

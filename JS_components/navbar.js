@@ -26,7 +26,7 @@ const logoDisappear = () => {
       if (window.scrollY > 100) {
         logo.classList.add("logo");
       }
-      if (window.scrollY <= 200) {
+      if (window.scrollY <= 100) {
         logo.classList.remove("logo");
       }
     })

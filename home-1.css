@@ -3,40 +3,56 @@
   linear-gradient(90deg, rgba(0, 0, 0, 1) 20.45%, rgba(0, 0, 0, 0.5) 35.73%),
     url('images/plant\ wall.avif');
 }
+
+/* HOME CONTAINER */
 .home {
-  padding: 140px 130px;
+  padding-left: 143px;
+  padding-right: 150px;
 }
 .home h6 {
+  padding: 140px 0;
   color: rgb(189, 189, 189);
   padding-bottom: 16px;
 }
 .home h1 {
   color: white;
+  
 }
 
+/* BUTTONS */
 .buttons {
   padding-top: 100px;
   display: flex;
-  width: 700px;
 }
-.buttons a {
+.btn-1{
   color: white;
   border: white 2px solid;
   padding: 15px 35px;
   margin-right: 17px;
   min-width: 200px;
-  text-decoration: none;
-  transition: 0.7s;
+}
+.btn-2{
+  color: white;
+  border: white 2px solid;
+  padding: 15px 43px;
+  margin-right: 17px;
+  min-width: 200px;
+}
+.buttons a {
+  -webkit-transition: background-color 0.7s ;
 }
 .buttons a:hover {
   background-color: white;
   color: black;
+  text-decoration: none;
+  transition: 0.7s ;
 }
 .buttons p {
   letter-spacing: 0.2rem;
   font-weight: 700;
 }
 
+/* SOCIAL MEDIA ICONS */
 .logos {
   padding: 180px 45px;
 }
@@ -46,20 +62,8 @@
   border: white 2px solid;
   border-radius: 50%;
 }
-.logos span {
-  /* color: #39b54a;
-  right: 4.5rem;
-  font-size: 1.3rem;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%; */
-}
 
+/* SCROLL */
 .scroll {
   margin-left: 1030px;
   margin-top: -137px;
@@ -92,19 +96,66 @@
   margin-top: -12px;
 }
 
-
-@media (max-width: 576px)  {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    
+/* MEDIA QUERY */
+@media (max-width: 996px) {
+  .home {
+    padding-left: 80px;
+    padding-right: 146px;
   }
-  .buttons a {
-    margin-bottom: 10px;
+  .home h1 {
+    font-size: 42px;
+    letter-spacing: 0.2rem;
   }
 }
-@media (min-width: 768px)  {
+@media (max-width: 876px)  {
+  .home {
+    padding-right: 80px;
+  }
+  .home h1 {
+    font-size: 42px;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 805px) {
+  .home {
+    padding-right: 70px;
+  }
+  .home h1 {
+    font-size: 35px;
+    letter-spacing: 0.2rem;
+  }
   .buttons {
-    display: flex;
+    flex-direction: column;
+    max-width: 256px;
+  }
+  .btn-1 {
+    margin-bottom: 19px;
+  }
+}
+@media (max-width: 690px) {
+  .home {
+    padding-right: 0px;
+  }
+  .home h1 {
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .home {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .home h1 {
+    font-size: 32px;
+    
+    letter-spacing: 0.2rem;
+  }
+  .buttons {
+    margin: 0 auto;
+  }
+  .logos {
+    display: none;
   }
 }

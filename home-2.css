@@ -5,24 +5,27 @@
   padding: 140px 130px;
   text-align: center;
 }
-.content2-transition {
-  
-}
+
 .content-2 h5 {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.2rem;
   font-size: 18px;
   margin: 0;
-  
 }
 .content-2 h1 {
   color: white;
   text-transform: capitalize;
   font-size: 80px;
-  padding-bottom: 65px;
+  margin-inline: -200px;
+}
+.content-2 h1:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 550px;
   border-bottom: rgb(209, 209, 209) 1px solid;
-  transition: ease-in-out 2s;
 }
 .content-2 p {
   margin: 0 -100px;
@@ -60,4 +63,34 @@
 .numbers h5 {
   font-weight: 900;
   text-transform: capitalize;
+}
+
+
+@media (max-width: 800px) {
+  .home-2 {
+    padding: 140px 90px;
+  }
+  .content-2 h5 {
+    letter-spacing: 0.2rem;
+    font-size: 15px;
+  }
+  .content-2 h1 {
+    font-size: 50px;
+  }
+  .content-2 h1:after{
+    width: 350px;
+  }
+  .content-2 p {
+    font-size: 22px;
+  }
+  .numbers {
+    grid-template-columns: 1fr ;
+  }
+  .vl {
+    display: none;
+  }
+  .vl-2 {
+    display: none;
+  }
+  
 }
