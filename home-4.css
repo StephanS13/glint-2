@@ -1,0 +1,48 @@
+/* PAGE 4 */
+.home-4 {
+  background-color: rgb(17, 17, 17);
+  height: 115vh;
+}
+.content-4 {
+  padding-top: 180px;
+  text-align: center;
+}
+.content-4 h5 {
+  color: #39b54a;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 17px;
+  margin: 0;
+}
+.content-4 h1 {
+  color: white;
+  font-size: 44px;
+  display:inline-block;
+  width:700px;
+}
+.content-4 h1:after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 550px;
+  border-bottom: rgba(99, 99, 99, 0.3) 1px solid;
+}
+
+/* PAGE 5 */
+.home-5 {
+  position: relative;
+  background-color: white;
+  height: 310vh;
+}
+.images-container {
+  position: absolute;
+  bottom: -50px;
+  justify-content: center;
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  gap: -20px;
+}
+.images-container img {
+  width: 520px;
+}
