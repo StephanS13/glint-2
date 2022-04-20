@@ -37,12 +37,14 @@
 }
 .images-container {
   position: absolute;
-  bottom: -50px;
+  bottom: 90px;
   justify-content: center;
-  /* display: grid; */
   grid-template-columns: 1fr 1fr;
   gap: -20px;
 }
 .images-container img {
   width: 520px;
+}
+.image-3, .image-5 {
+  margin-top: -130px;
 }

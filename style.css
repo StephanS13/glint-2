@@ -42,7 +42,7 @@ p {
 .appear.active{
   transform: translateY(0);
   opacity: 1;
-  transition: 1.5s;
+  transition: 1.2s;
 }
 
 
