@@ -1,6 +1,17 @@
 .page-2 {
   background-color: #39b54a;
+  position: relative;
 }
+
+.vertical-line-2 {
+  position: absolute;
+  top: 0;
+  right: 78px;
+  width: 2px;
+  height: 6rem;
+  background-color: white;
+}
+
 .home-2 {
   padding: 140px 130px;
   text-align: center;
@@ -92,5 +103,10 @@
   .vl-2 {
     display: none;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .vertical-line-2 {
+  display: none;
+  }
 }

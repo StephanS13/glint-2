@@ -1,19 +1,23 @@
-.foot {
+.footer {
   position: fixed;
   right:27px;
   bottom: 30px;
-  transition: ease-in 0.7s;
 }
-.foot h1 {
+.footer h1 {
   color: gray;
   font-weight: 900;
   background-color: black;
   padding: 16px 23px;
   font-size: 20px;
+  -webkit-transition: 0.5s color ;
 }
-.foot h1:hover {
+.footer h1:hover {
   color: white;
+  transition: 0.5s;
+  
 }
-.foot a {
+
+.footer a {
   text-decoration: none;
+
 }

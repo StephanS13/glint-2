@@ -1,9 +1,7 @@
-.navbar {
-  padding: 40px 30px;
-  position:sticky;
-  top: 0;
-}
-.navbar img {
+.brand img {
+  position: fixed;
+  top: 33px;
+  left: 38px;
   width: 80px;
   transition: 0.7s;
 }
@@ -11,10 +9,14 @@
   opacity: 0;
 }
 .menu {
+  position: fixed;
+  top: 33px;
+  right: 38px;
   color: #39b54a;
   align-items: center;
   padding-right: 20px;
   transition: 0.5s;
+  z-index: 2;
 }
 .menu:hover {
   color: white;
@@ -28,7 +30,15 @@
   transition: 0.5s background-color ease;
   padding: 5px 20px;
 }
-/* .navbar-lewagon {
-  background-color: transparent;
-  transition: 0.5s background-color ease;
-} */
+
+@media (max-width: 576px) {
+  .menu h6 {
+    display: none;
+  }
+  .navbar-toggler {
+    padding: 0;
+  }
+  .bg-black {
+    padding: 5px 10px;
+  }
+}

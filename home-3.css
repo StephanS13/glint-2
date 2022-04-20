@@ -94,3 +94,14 @@
     padding: 0 100px;
   }
 }
+
+@media (max-width: 576px) {
+  .content-3 h1 {
+    text-align: center;
+    font-size: 33px;
+    min-width: 320px;
+  }
+  .boxes p {
+    min-width: 550px;
+  }
+}

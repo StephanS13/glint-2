@@ -17,15 +17,18 @@
 
     <div class="page">
 
-      <div class="navbar d-flex justify-content-between">
-        <img src="images/Glint logo.webp" alt="" id="logo-id">
-        <div class="menu d-flex">
-          <h6>MENU</h6>
-          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button> 
-        </div>
+      <!--------- NAVBAR --------->
+      <div class="brand">
+        <img src="images/Glint logo.webp" alt="Glint" id="logo-id">
       </div>
 
-      <div class="d-flex">
+      <div class="menu d-flex">
+        <h6>MENU</h6>
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button> 
+      </div>
+
+      <!--------- PAGE 1 ---------->
+      <section class="page-1 d-flex">
 
         <div class="home container appear">
           <h6>WELCOME TO GLINT</h6>
@@ -48,18 +51,21 @@
           <li><img src="images/instagram2.png" alt=""></li>
         </ul>
 
-      </div>
+        <div class="scroll d-flex">
+          <a href="#page-3">
+            <i class="arrow down"></i>
+            <span>Scroll down</span>
+          </a>
+          <div class="vertical-line"></div>
+        </div>
+      </section>
 
-      <div class="scroll">
-        <a href="">
-          <i class="arrow down"></i>
-          <span>Scroll down</span>
-        </a>
-      </div>
-      <div class="vertical-line"></div>
+      
+      <!---------- PAGE 2 --------->
+      <section class="page-2">
 
-      <div class="page-2">
-    
+        <div class="vertical-line-2"></div>
+
         <div class="home-2 container">
           <div class="content-2">
             <h5 class="appear">Hello There</h5>
@@ -92,9 +98,11 @@
             
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="page-3">
+
+      <!---------- PAGE 3 --------->
+      <section class="page-3" id="page-3">
 
         <div class="home-3 container">
           <div class="content-3">
@@ -133,9 +141,14 @@
             <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
           </div>
         </div>
-      </div>
+      </section>
       
-      <footer class="foot" title="Back to top">
+
+
+
+
+      <!--------- FOOTER ---------->
+      <footer class="footer" title="Back to top">
         <a href="#top"><h1>&#8679;</h1></a>
       </footer>
     
@@ -160,5 +173,6 @@
     <script src="main.js"></script>
     <script src="JS_components/navbar.js"></script>
     <script src="home-2.js"></script>
+    <script src="JS_components/footer.js"></script>
   </body>
 </html>
