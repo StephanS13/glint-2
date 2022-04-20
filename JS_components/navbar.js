@@ -1,7 +1,7 @@
 console.log("hello from navbar.js")
 
 
-
+// MENU BACKGROUND APPEAR ON SCROLL DOWN
 const menuBackground = () => {
   const menu = document.querySelector(".menu");
   if (menu) {
@@ -18,15 +18,16 @@ const menuBackground = () => {
 
 menuBackground();
 
+// LOGO DISAPPEAR ON SCROLL DOWN
 const logoDisappear = () => {
   const logo = document.querySelector("#logo-id");
 
   if (logo) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 150) {
         logo.classList.add("logo");
       }
-      if (window.scrollY <= 100) {
+      if (window.scrollY <= 50) {
         logo.classList.remove("logo");
       }
     })

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- <script src="javascript/lib.js" defer></script> -->
   </head>
 
-  <body>
+  <body id="top">
 
     <div class="page">
 
@@ -69,24 +69,24 @@
 
           <div class="numbers appear">
             <div class="number">
-              <h1>127</h1>
+              <h1 class="counter">127</h1>
               <h5>Awards Received</h5>
             </div>
             <div class="vl"></div>
   
             <div class="number">
-              <h1>1515</h1>
+              <h1 class="counter">1515</h1>
               <h5>cups of coffee</h5>
             </div>
   
             <div class="number">
-              <h1>109</h1>
+              <h1 class="counter">109</h1>
               <h5>projects completed</h5>
             </div>
             <div class="vl-2"></div>
   
             <div class="number">
-              <h1>102</h1>
+              <h1 class="counter">102</h1>
               <h5>Happy clients</h5>
             </div>
             
@@ -134,8 +134,29 @@
           </div>
         </div>
       </div>
+      
+      <footer class="foot" title="Back to top">
+        <a href="#top"><h1>&#8679;</h1></a>
+      </footer>
+    
     </div> 
     
+
+    <!---------- COUNTER ---------->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script>
+      jQuery(document).ready(function( $ )
+      {
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1300
+        });
+      });
+    </script>
+
+
+    <!---------- JS FILES ---------->
     <script src="main.js"></script>
     <script src="JS_components/navbar.js"></script>
     <script src="home-2.js"></script>
