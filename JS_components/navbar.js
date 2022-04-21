@@ -15,8 +15,19 @@ const menuBackground = () => {
     })
   } 
 };
-
 menuBackground();
+
+// MAKE BG-MENU APPEAR BY DEFAULT IF 
+const menuByDefault = () => {
+  const menu = document.querySelector(".menu");
+  window.onload = function() {
+    if (window.scrollY > 350) {
+      menu.classList.add("bg-black");
+    }
+  };
+};
+menuByDefault();
+
 
 // LOGO DISAPPEAR ON SCROLL DOWN
 const logoDisappear = () => {
@@ -33,5 +44,4 @@ const logoDisappear = () => {
     })
   } 
 };
-
 logoDisappear();
