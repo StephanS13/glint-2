@@ -1,9 +1,10 @@
-@import url("navbar.css");
-@import url("home-1.css");
-@import url("home-2.css");
-@import url("home-3.css");
-@import url("home-4.css");
-@import url("footer.css");
+@import url("CSS_components/navbar.css");
+@import url("CSS_pages/home-1.css");
+@import url("CSS_pages/home-2.css");
+@import url("CSS_pages/home-3.css");
+@import url("CSS_pages/home-4.css");
+@import url("CSS_pages/home-6.css");
+@import url("CSS_components/footer.css");
 
 * {
   margin: 0;
