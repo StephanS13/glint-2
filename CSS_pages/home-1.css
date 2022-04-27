@@ -3,7 +3,7 @@
   linear-gradient(90deg, rgba(0, 0, 0, 1) 20.45%, rgba(0, 0, 0, 0.5) 35.73%),
     url('../images/hero-bg.jpg.webp');
     background-position: center;
-    z-index: -10;
+    /* z-index: -100; */
 }
 
 .page-1 {
@@ -61,7 +61,7 @@
 
 /* SOCIAL MEDIA ICONS */
 .icons {
-  padding: 300px 50px;
+  padding: 290px 50px;
 }
 .icons img {
   background-color: white;
@@ -69,6 +69,7 @@
   margin: 7px 0;
   border: white 1px solid;
   border-radius: 50%;
+  z-index: 1;
 }
 
 

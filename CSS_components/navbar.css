@@ -4,6 +4,7 @@
   left: 38px;
   width: 80px;
   transition: 0.7s;
+  z-index: 1;
 }
 .logo {
   opacity: 0;
