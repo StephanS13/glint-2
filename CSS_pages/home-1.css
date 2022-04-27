@@ -1,8 +1,9 @@
-.page {
+.page-1 {
   background-image:
   linear-gradient(90deg, rgba(0, 0, 0, 1) 20.45%, rgba(0, 0, 0, 0.5) 35.73%),
-    url('images/plant\ wall.avif');
+    url('../images/hero-bg.jpg.webp');
     background-position: center;
+    z-index: -10;
 }
 
 .page-1 {
