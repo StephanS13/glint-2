@@ -1,3 +1,5 @@
+// const { validate } = require("json-schema");
+
 console.log("hello from main")
 
 
@@ -15,22 +17,27 @@ function reveal(){
 
     if(revealtop < windowheight - revealpoint){
       reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
+    } 
   }
 }
 
 reveal();
 
-// HOVER ON IMAGES
-// const images = document.querySelectorAll(".images-container i")
+// GREEN ON INPUT
+const inputs = document.querySelectorAll(".input")
 
-// images.addEventListener("mouseover", hover)
-
-// function hover(){
-//   images.forEach((image) => {
-//     image.classList.add('hovered')
-//   })
-// }
-// hover();
+inputs.forEach((input) => {
+  input.addEventListener("focusin", (event) =>{
+  const horizontalLines = document.querySelectorAll(".hl");
+  horizontalLines.forEach((line) => {
+    line.classList.add("green") = currentTarget.classList.add("green");
+  });
+    
+  });
+  input.addEventListener("focusout", (event) =>{
+    const horizontalLines = document.querySelectorAll(".hl");
+  horizontalLines.forEach((line) => {
+    line.classList.remove("green") = currentTarget.classList.remove("green");
+    });
+  });
+});

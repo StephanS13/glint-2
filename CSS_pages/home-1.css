@@ -3,7 +3,10 @@
   linear-gradient(90deg, rgba(0, 0, 0, 1) 20.45%, rgba(0, 0, 0, 0.5) 35.73%),
     url('../images/hero-bg.jpg.webp');
     background-position: center;
-    /* z-index: -100; */
+    /* background-repeat: no-repeat; */
+    /* object-fit: fill; */
+    /* position: sticky;
+    top:0; */
 }
 
 .page-1 {

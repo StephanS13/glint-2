@@ -1,9 +1,10 @@
 .page-3 {
-  background-color: white !important;
+  background-color: white;
 }
 
-.home-3 {
-  padding: 140px 80px;
+.content-3 {
+  padding: 0 80px;
+  padding-top: 140px;
   text-align: center;
 }
 .content-3 h5 {
@@ -22,42 +23,47 @@
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  width: 550px;
+  width: 60%;
   border-bottom: rgb(209, 209, 209) 1px solid;
 }
 
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 50px;
-  column-gap: 130px;
-  margin-top: 60px;
-  margin-left: 50px;
+  row-gap: 9%;
+  column-gap: 15%;
+  padding-top: 60px;
+  padding-inline: 5%;
+  padding-bottom: 180px;
+  margin: 0 0;
+  margin-left: 7%;
   text-align: left;
   justify-content: center;
 }
-.boxes i {
+.box i {
+  font-size: 3rem;
   color: #39b54a;
-  margin-left: -80px;
-  margin-right: 30px;
+  margin-left: -20%;
+  margin-right: 8%;
 }
-.boxes h2 {
+.box h2 {
+  font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
   text-transform: capitalize;
-  min-width: 207px;
 }
-.boxes p {
-  font-size: 20px;
+.box p {
+  font-size: 18px;
   color: rgb(138, 138, 138);
   font-family: "lora-regular", serif;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
-@media (max-width: 800px) {
+
+/* MEDIA QUERIES */
+@media (max-width: 880px) {
   .home-3 {
-    padding: 140px 0;
-  
+    /* padding: 140px 0; */
   }
   .content-3 h5 {
     font-size: 14px;
@@ -67,8 +73,19 @@
     padding-bottom: 50px;
     letter-spacing: 0;
   }
-  .content-3 h1:after{
-    width: 350px;
+  .box h2 {
+    font-size: 25px;
+  }
+  .box p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 770px) {
+  .content-3 h1 {
+    text-align: center;
+    font-size: 33px;
+    min-width: 320px;
   }
   .boxes {
     grid-template-columns: 1fr;
@@ -76,32 +93,21 @@
     margin: 0;
     padding: 0;
     margin-top: 50px;
-    
+    margin-bottom: 400px;
   }
   .box-title {
     flex-direction: column;
-    
   }
-  .boxes i {
+  .box i {
     margin: 0 auto;
     margin-bottom: 15px;
   }
-  .boxes h2 {
+  .box h2 {
     font-size: 30px;
   }
-  .boxes p {
+  .box p {
     font-size: 19px;
     padding: 0 100px;
-  }
-}
-
-@media (max-width: 576px) {
-  .content-3 h1 {
-    text-align: center;
-    font-size: 33px;
-    min-width: 320px;
-  }
-  .boxes p {
     min-width: 550px;
   }
 }
