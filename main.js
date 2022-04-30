@@ -23,21 +23,23 @@ function reveal(){
 
 reveal();
 
+
 // GREEN ON INPUT
 const inputs = document.querySelectorAll(".input")
 
 inputs.forEach((input) => {
   input.addEventListener("focusin", (event) =>{
-  const horizontalLines = document.querySelectorAll(".hl");
-  horizontalLines.forEach((line) => {
-    line.classList.add("green") = currentTarget.classList.add("green");
-  });
+  
+    input.classList.remove("hl");
+    input.classList.add("green");
+   
+    
     
   });
-  input.addEventListener("focusout", (event) =>{
-    const horizontalLines = document.querySelectorAll(".hl");
-  horizontalLines.forEach((line) => {
-    line.classList.remove("green") = currentTarget.classList.remove("green");
-    });
-  });
+  // input.addEventListener("focusout", (event) =>{
+  //   const horizontalLines = document.querySelectorAll(".hl");
+  // horizontalLines.forEach((line) => {
+  //   event.currentTarget.classList.remove("green");
+  //   });
+  // });
 });

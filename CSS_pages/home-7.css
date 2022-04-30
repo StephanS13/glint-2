@@ -67,8 +67,12 @@ input, textarea {
   border-bottom: rgba(209, 209, 209, .1 ) 1px solid;
 }
 .green {
+  content: "";
+  display: block;
+  /* margin: 0 auto; */
+  margin-top: -8px;
+  width: 90%;
   border-bottom: #39b54a 1px solid;
-  color:#39b54a;
 }
 
 .contact-info {
