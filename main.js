@@ -1,5 +1,4 @@
 // const { validate } = require("json-schema");
-
 console.log("hello from main")
 
 
@@ -25,21 +24,77 @@ reveal();
 
 
 // GREEN ON INPUT
-const inputs = document.querySelectorAll(".input")
 
-inputs.forEach((input) => {
-  input.addEventListener("focusin", (event) =>{
+// Name
+const nam = document.getElementById("name");
+nam.addEventListener('focusin', () => {
   
-    input.classList.remove("hl");
-    input.classList.add("green");
-   
-    
-    
-  });
-  // input.addEventListener("focusout", (event) =>{
-  //   const horizontalLines = document.querySelectorAll(".hl");
-  // horizontalLines.forEach((line) => {
-  //   event.currentTarget.classList.remove("green");
-  //   });
-  // });
+  const line = document.querySelector(".hl-name");
+  line.classList.remove("hl");
+  line.classList.add("green");
 });
+nam.addEventListener('focusout', () => {
+  const line = document.querySelector(".hl-name");
+  line.classList.remove("green");
+  line.classList.add("hl");
+});
+
+// Email
+const email = document.getElementById("email");
+email.addEventListener('focusin', () => {
+  
+  const line = document.querySelector(".hl-email");
+  line.classList.remove("hl");
+  line.classList.add("green");
+});
+email.addEventListener('focusout', () => {
+  const line = document.querySelector(".hl-email");
+  line.classList.remove("green");
+  line.classList.add("hl");
+});
+
+// Subject
+const subject = document.getElementById("subject");
+subject.addEventListener('focusin', () => {
+  
+  const line = document.querySelector(".hl-subject");
+  line.classList.remove("hl");
+  line.classList.add("green");
+});
+subject.addEventListener('focusout', () => {
+  const line = document.querySelector(".hl-subject");
+  line.classList.remove("green");
+  line.classList.add("hl");
+});
+
+// Message
+const message = document.getElementById("message");
+message.addEventListener('focusin', () => {
+  
+  const line = document.querySelector(".hl-message");
+  line.classList.remove("hl");
+  line.classList.add("green");
+});
+message.addEventListener('focusout', () => {
+  const line = document.querySelector(".hl-message");
+  line.classList.remove("green");
+  line.classList.add("hl");
+});
+
+// inputs.forEach((input) => {
+//   input.addEventListener("focus", (event) =>{
+  
+//     const horizontalLines = document.querySelectorAll(".hl");
+//     horizontalLines.forEach((line) => {
+//       console.log(event.firstChild)
+//       line.classList.add("green");
+//       line.classList.remove("hl");
+//       });
+//   });
+//   input.addEventListener("focusout", (event) =>{
+//     const horizontalLines = document.querySelectorAll(".hl");
+//   horizontalLines.forEach((line) => {
+//     line.classList.remove("green");
+//     });
+//   });
+// });
