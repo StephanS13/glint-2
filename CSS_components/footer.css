@@ -1,9 +1,9 @@
-.footer {
+.top {
   position: fixed;
   right:27px;
   bottom: 30px;
 }
-.footer h1 {
+.top h1 {
   color: gray;
   font-weight: 900;
   background-color: black;
@@ -11,12 +11,12 @@
   font-size: 20px;
   -webkit-transition: 0.5s color ;
 }
-.footer h1:hover {
+.top h1:hover {
   color: white;
   transition: 0.5s;
   
 }
 
-.footer a {
+.top a {
   text-decoration: none;
 }
