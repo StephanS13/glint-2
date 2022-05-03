@@ -1,0 +1,62 @@
+/* MEDIA QUERY */
+@media (max-width: 1140px) {
+  .home {
+    width: 50%;
+  }
+  .home h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1050px) {
+  .home {
+    /* padding-left: 80px;
+    padding-right: 146px; */
+    width: 60%;
+  }
+  .home h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 876px)  {
+
+}
+@media (max-width: 805px) {
+  .home {
+    margin-left: auto;
+    width: 70%;
+  }
+  .buttons {
+    flex-direction: column;
+    max-width: 256px;
+  }
+  .btn-1 {
+    margin-bottom: 19px;
+  }
+}
+@media (max-width: 690px) {
+
+}
+@media (max-width: 576px) {
+  .home {
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    padding-inline: auto;
+    text-align: center;
+    /* justify-content: center; */
+  }
+  .home h1 {
+    font-size: 32px;
+  }
+  .buttons {
+    margin: 0 auto;
+  }
+  .icons {
+    display: none;
+  }
+  .scroll a {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+}

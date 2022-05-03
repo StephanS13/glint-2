@@ -18,10 +18,11 @@
 }
 
 .content-2 h5 {
-  text-transform: uppercase;
-  font-weight: 900;
+  font-family: "montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   letter-spacing: 0.2rem;
-  font-size: 18px;
+  text-transform: uppercase;
   margin: 0;
 }
 .content-2 h1 {

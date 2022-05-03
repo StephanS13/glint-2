@@ -1,3 +1,4 @@
+/* TO THE TOP ELEMENT */
 .top {
   position: fixed;
   right:27px;
@@ -16,7 +17,124 @@
   transition: 0.5s;
   
 }
-
 .top a {
   text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.footer-content {
+  width: 90%;
+  padding-top: 80px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+}
+.footer-content h5 {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+.footer-content p {
+  width: 415px;
+  padding-top: 40px;
+  font-size: 16px;
+  font-family: "montserrat-light",sans-serif;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, .3);
+}
+.glint-logo img {
+  width: 90px;
+}
+
+/* Email */
+.email-footer {
+  background-color: black;
+  margin-left: -50px;
+  display: flex;
+  width: 415px;
+}
+.email-footer i {
+  font-size: 30px;
+  font-style: normal;
+  color: white;
+  padding-left: 10px;
+}
+.email-footer input {
+  padding: 17px 14px;
+  padding-right: -50px;
+}
+.btn-subscribe {
+  background-color: #39b54a;
+  color: white;
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "montserrat-light",sans-serif;
+  width: 200px
+}
+
+/* Credits */
+.credits {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.credits p {
+  font-family: "montserrat-light",sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  color: rgba(255, 255, 255, .4);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .footer-content p {
+    width: 90%;
+  }
+  .email-footer {
+    background-color: black;
+    margin-left: -50px;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-content {
+    width: 80%;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+  }
+  .footer-content h5 {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    width: 87%;
+    grid-template-columns: 1fr;
+  }
+  .glint-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-content h5 {
+    padding-top: 40px;
+  }
+  .credits {
+    display: block;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  .credit {
+    margin-top: -75px;
+    padding-bottom: 60px;
+  }
 }

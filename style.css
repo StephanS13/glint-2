@@ -1,23 +1,27 @@
 @import url("CSS_components/navbar.css");
 @import url("CSS_pages/home-1.css");
+@import url("CSS_pages/home-1_media_query.css");
 @import url("CSS_pages/home-2.css");
 @import url("CSS_pages/home-3.css");
 @import url("CSS_pages/home-4-5.css");
 @import url("CSS_pages/home-6.css");
 @import url("CSS_pages/home-7.css");
 @import url("CSS_components/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
+
+/* BODY & PAGE */
 * {
   margin: 0;
   padding: 0;
 }
 body {
   margin: 0;
-  font-family: "montserrat-medium", sans-serif;
+  font-family: "montserrat", sans-serif;
   overflow-x: hidden;
 }
-h1, h3, h6, p {
-  font-family: "montserrat-medium", sans-serif;
+h1, h3, h5, h6, p {
+  font-family: "montserrat", sans-serif;
   margin: 0;
 }
 h1 {
@@ -35,6 +39,15 @@ h6 {
 p {
   font-size: 12px;
 }
+.page {
+  background-image:
+  linear-gradient(80deg, rgba(0, 0, 0, .7) 20.45%, rgba(0, 0, 0, 0.5) 35.73%),
+  url('images/hero-bg.jpg.webp');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 
 /* EFFECT */
 .appear {
@@ -49,16 +62,23 @@ p {
 
 
 /* CONTAINER */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  .page {
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+  }
   .container {
     max-width: 620px;
   }
 }
+
 @media (max-width: 690px) {
   .container {
     max-width: 500px;
   }
 }
+
 @media (max-width: 540px) {
   .container {
     max-width: 400px;
