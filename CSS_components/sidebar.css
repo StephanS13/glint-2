@@ -15,7 +15,7 @@
   padding-top: 33px;
   padding-left: 32px;
   padding-bottom: 50px;
-  color: #39b54a;
+  color: var(--green);
   font-family: "montserrat", sans-serif;
   font-size: 12px;
   font-weight: 700;

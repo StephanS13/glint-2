@@ -92,7 +92,7 @@
   margin-right: 10px;
 }
 .arrow {
-  border: solid #39b54a;
+  border: solid var(--green);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -104,7 +104,7 @@
 .vertical-line {
   width: 2px;
   height: 6rem;
-  background-color: #39b54a;
+  background-color: var(--green);
 }
 
 

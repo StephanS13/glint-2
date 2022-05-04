@@ -13,7 +13,7 @@
   position: fixed;
   top: 33px;
   right: 38px;
-  color: #39b54a;
+  color: var(--green);
   align-items: center;
   padding-right: 20px;
   transition: 0.5s;

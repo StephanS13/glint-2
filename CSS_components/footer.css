@@ -68,7 +68,7 @@
   padding-right: -50px;
 }
 .btn-subscribe {
-  background-color: #39b54a;
+  background-color: var(--green);
   color: white;
   opacity: 1;
   font-size: 12px;

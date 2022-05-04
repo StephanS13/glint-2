@@ -7,6 +7,7 @@
     font-size: 48px;
   }
 }
+
 @media (max-width: 1050px) {
   .home {
     /* padding-left: 80px;
@@ -33,16 +34,11 @@
     margin-bottom: 19px;
   }
 }
-@media (max-width: 690px) {
 
-}
 @media (max-width: 576px) {
   .home {
-    /* padding-right: 20px;
-    padding-left: 20px; */
     padding-inline: auto;
     text-align: center;
-    /* justify-content: center; */
   }
   .home h1 {
     font-size: 32px;
