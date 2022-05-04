@@ -32,6 +32,7 @@
   height:230px;
 }
 
+
 /* PAGE 5 */
 .home-5 {
   background-color: white;
@@ -41,12 +42,7 @@
   top: -158px;
   bottom: 100px;
 }
-.images-container a {
-  transition: all .5s ease-in-out;
-}
-.images-container a:hover {
-  filter: brightness(30%);
-}
+
 
 .rows {
   display: flex;
@@ -56,16 +52,92 @@
   overflow: hidden;
 }
 .img-container img {
+  position: relative;
   width: 100%;
   transition: all .5s ease-in-out;
 }
+
+
+
+.plus {
+  position: absolute;
+  color: white;
+  font-size: 4.9px;
+  font-weight: 100;
+  transition: all .5s;
+}
+.img-container:hover .plus {
+  transform: scale(10.1);
+  top: 40%;
+  left: 49%;
+}
+
+
+.string {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  height: 0%;
+  transition: height .5s;
+}
+.link {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  right: -2400%;
+  font-size: 19px;
+  font-weight: 700;
+  color: white !important;
+  border: white 1.5px solid;
+  border-radius: 50%;
+  padding: 1000%;
+  opacity: 1 !important;
+}
+.img-container:hover .string {
+  visibility: visible;
+  top: 0px;
+  left: 15%;
+  width: 1px;
+  height: 5%;
+  background-color: rgb(129, 129, 129);
+  opacity: .3;
+} 
+.img-container:hover .link  {
+  visibility: visible;
+}
+
+.img-titles {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0%;
+  left: 8%;
+  transition: bottom .5s ;
+}
+.img-titles h6 {
+  color: white;
+  margin-bottom: -20px;
+  text-transform: uppercase;
+}
+.img-titles p {
+  color: gray;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+.img-container:hover .img-titles{
+  visibility: visible;
+  bottom: 27%;
+}
+
+
+
 .image-3, .image-5 {
   margin-top: -12.5%;
 }
 /* HOVER ON IMGs */
-.img-container:hover img,
-.img-different:hover img {
-  transform: scale(1.08)
+.img-container:hover img {
+  transform: scale(1.08);
+  filter: brightness(20%);
 }
 
 
@@ -77,6 +149,20 @@
     text-align: center;
     font-size: 33px;
     width: 80%
+  }
+  .link {
+    padding: 1000%;
+    font-size: 16px;
+    right: -2200%;
+  }
+  .img-titles h6 {
+    font-size: 10px;
+  }
+  .img-titles p {
+    font-size: 10px;
+  }
+  .img-container:hover .img-titles{
+    bottom: 23%;
   }
 }
 
@@ -97,6 +183,15 @@
   }
   .rows {
     flex-direction: column;
+  }
+  .img-titles h6 {
+    font-size: 13px;
+  }
+  .img-titles p {
+    font-size: 13px;
+  }
+  .img-container:hover .img-titles{
+    bottom: 16%;
   }
   .image-3, .image-5 {
     margin-top: 0;

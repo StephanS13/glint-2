@@ -18,6 +18,7 @@
   padding-right: 20px;
   transition: 0.5s;
   z-index: 2;
+  cursor: pointer;
 }
 .menu:hover {
   color: white;
@@ -25,6 +26,9 @@
 .navbar-toggler {
   color: white;
   width: 20px;
+}
+button:hover, button:focus {
+  outline: none;
 }
 .bg-black {
   background-color: black;

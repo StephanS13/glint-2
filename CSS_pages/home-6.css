@@ -23,10 +23,6 @@
 
 
 /* CAROUSEL */
-.carousel-inner {
-  /* position: static;
-  width: 100%; */
-}
 .carousel-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
