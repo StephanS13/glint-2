@@ -1,5 +1,3 @@
-console.log("hello from navbar.js")
-
 
 // MENU BACKGROUND APPEAR ON SCROLL DOWN
 const menuBackground = () => {
@@ -17,7 +15,7 @@ const menuBackground = () => {
 };
 menuBackground();
 
-// MAKE BG-MENU APPEAR BY DEFAULT IF 
+// MAKE BG-MENU APPEAR BY DEFAULT IF LOWER THAN 350
 const menuByDefault = () => {
   const menu = document.querySelector(".menu");
   window.onload = function() {
@@ -25,8 +23,15 @@ const menuByDefault = () => {
       menu.classList.add("bg-black");
     }
   };
+  const pages = document.querySelector(".sidenav a");
+  pages.addEventListener("click", () => {
+    menu.classList.add("bg-black");
+  });
 };
 menuByDefault();
+
+
+
 
 
 // LOGO DISAPPEAR ON SCROLL DOWN

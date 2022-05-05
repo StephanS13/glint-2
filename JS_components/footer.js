@@ -1,4 +1,3 @@
-console.log("hello from footer")
 
 // FOOTER DISAPPEAR ON SCROLL DOWN
 const footerDisappear = () => {

@@ -61,6 +61,7 @@
   margin: 280px 50px;
 }
 .icons li {
+  position: relative;
   list-style-type: none;
 }
 .icons img {
@@ -70,6 +71,21 @@
   border: white 2px solid;
   border-radius: 50%;
   z-index: 1;
+}
+.icons p {
+  visibility: hidden;
+  position: absolute;
+  top: 21%;
+  right: 134%;
+  color: var(--green);
+  font-family: "montserrat", sans-serif;
+  font-size: 0;
+  font-weight: 500;
+  transition: all .5s;
+}
+.icons a:hover p {
+  visibility: visible;
+  font-size: 15px;
 }
 
 

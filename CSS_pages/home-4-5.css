@@ -58,34 +58,40 @@
   margin-top: -12.5%;
 }
 
+/* HOVER ZOOM & BRIGHTNESS */
 .img-container:hover img {
   transform: scale(1.08);
   filter: brightness(20%);
 }
 
 
-
+/* HOVER PLUS */
 .plus {
+  visibility: hidden;
   position: absolute;
+  top: 40%;
+  left: 49%;
   color: white;
   font-size: 4.9px;
   font-weight: 100;
   transition: all .4s;
 }
 .img-container:hover .plus {
-  transform: scale(10.1);
-  top: 40%;
-  left: 49%;
+  visibility: visible;
+  transform: scale(8.1);
 }
 
-
+/* HOVER LINK */
 .string {
   visibility: hidden;
   position: absolute;
   top: 0px;
   left: 15%;
   height: 0%;
-  transition: height .4s;
+  width: 1px;
+  background-color: rgb(129, 129, 129);
+  opacity: .3;
+  transition: all .4s;
 }
 .link {
   visibility: hidden;
@@ -102,23 +108,19 @@
 }
 .img-container:hover .string {
   visibility: visible;
-  top: 0px;
-  left: 15%;
-  width: 1px;
   height: 5%;
-  background-color: rgb(129, 129, 129);
-  opacity: .3;
 } 
 .img-container:hover .link  {
   visibility: visible;  
 }
 
+/* HOVER TITLES */
 .img-titles {
   visibility: hidden;
   position: absolute;
   bottom: 0%;
   left: 8%;
-  transition: bottom .4s;
+  transition: all .4s;
 }
 .img-titles h6 {
   color: white;

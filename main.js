@@ -1,5 +1,5 @@
 // const { validate } = require("json-schema");
-console.log("hello from main")
+
 
 
 // EFFECT ON REVEAL
