@@ -24,7 +24,6 @@ reveal();
 
 
 // GREEN ON INPUT
-
 // Name
 const nam = document.getElementById("name");
 nam.addEventListener('focusin', () => {
